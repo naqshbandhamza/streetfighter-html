@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>2D Game Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+      integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+      crossorigin="anonymous"
+    ></script>
+    <div id="myNav" class="overlay">
+      <video id="myVideo" autoplay muted>
+        <source src="./assets/welcome.mp4" type="video/mp4" />
+      </video>
+
+      <button class="closebtn">click to start</button>
+    </div>
+
+    <canvas id="canvas1"></canvas>
+    <img id="ryu" src="./assets/Ryu.png" />
+    <script src="index.js"></script>
+  </body>
+</html>
