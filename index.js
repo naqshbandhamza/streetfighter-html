@@ -378,7 +378,7 @@ window.addEventListener("load", function () {
         if (this.timer > deltaTime) {
           context.clearRect(0, 0, this.width, this.height);
           this.player.update();
-          this.player.draw(context, "white");
+          //this.player.draw(context, "white");
           this.player.drawSprite(context);
           this.player.animate();
           //this.opponent.draw(context, "red");
@@ -411,7 +411,6 @@ window.addEventListener("load", function () {
     game.gameStart = true;
     this.setTimeout(() => {
       sfx.ryu.play();
-      sfx.ryu.loop();
     }, 500);
   });
 });
