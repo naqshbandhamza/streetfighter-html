@@ -36,7 +36,6 @@ export class Game {
         //this.opponent.draw(context, "red");
 
         if (this.checkCollision(this.player, this.opponent)) {
-          console.log("collison detected");
         }
 
         this.timer = 0;
