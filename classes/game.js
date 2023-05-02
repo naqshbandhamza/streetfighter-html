@@ -30,10 +30,10 @@ export class Game {
       if (this.timer > deltaTime) {
         context.clearRect(0, 0, this.width, this.height);
         this.player.update();
-        //this.player.draw(context, "white");
+        this.player.draw(context, "white");
         this.player.drawSprite(context);
         this.player.animate();
-        //this.opponent.draw(context, "red");
+        this.opponent.draw(context, "red");
 
         if (this.checkCollision(this.player, this.opponent)) {
         }

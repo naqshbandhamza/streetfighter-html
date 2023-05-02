@@ -31,6 +31,7 @@ export class Player {
     } else this.collisionY += speedY * this.speedModifier;
   }
 
+  //player movement
   update() {
     const dx = this.game.mouse.x - this.collisionX;
     const dy = this.game.mouse.y - this.collisionY;

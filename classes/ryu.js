@@ -5,16 +5,17 @@ export class Ryu extends Player {
     super(game, posX, posY, collisionRadius, speedModifier);
     this.image = document.getElementById("ryu");
 
-    this.spriteHeight; // it is for every frame height & width
-    this.spriteWidth;
+    this.spriteHeight; // each frame height
+    this.spriteWidth; //each frame width
 
-    this.width; // it is for scalling
-    this.height;
+    this.width; // scalling
+    this.height; // scalling
 
-    this.spriteX;
-    this.spriteY;
-    this.row = 0;
-    this.col = 0;
+    this.spriteX; // position x
+    this.spriteY; // position y
+
+    this.row = 0; // represents row of sprite sheet
+    this.col = 0; // represents which frame in the current row is beign displayed
 
     this.startAnimation = true;
     this.animationCounter = 0;
@@ -86,14 +87,12 @@ export class Ryu extends Player {
           }
           break;
         case "ArrowUp":
-          // Up pressed
           if (this.row !== 4) {
             this.row = 4;
             this.col = 0;
           }
           break;
         case "ArrowDown":
-          // Down pressed
           break;
       }
     });
@@ -119,16 +118,14 @@ export class Ryu extends Player {
           }
           break;
         case "ArrowUp":
-          // Up pressed
-
           break;
         case "ArrowDown":
-          // Down pressed
           break;
       }
     });
   }
 
+  //animate the sprite sheet
   animate() {
     if (this.row === 0 && this.startAnimation) {
       let max_counter = 0;
