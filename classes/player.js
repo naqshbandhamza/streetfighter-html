@@ -8,6 +8,7 @@ export class Player {
   }
 
   updatePosition(speedX, speedY) {
+    // update position and keep the player within screen boundary
     if (this.collisionX + speedX * this.speedModifier < this.collisionRadius) {
       this.collisionX = 0 + this.collisionRadius;
       this.game.mouse.x = 0 + this.collisionRadius;
