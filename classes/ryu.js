@@ -26,6 +26,7 @@ export class Ryu extends Player {
     //each frame in the sprite sheet
     this.frameSet = [
       [
+        //get ready animation
         { w: 80, h: 108, x: 12, y: 4 },
         { w: 80, h: 108, x: 86, y: 4 },
         { w: 80, h: 108, x: 164, y: 1 },
@@ -35,6 +36,7 @@ export class Ryu extends Player {
         { w: 80, h: 108, x: 456, y: 4 },
         { w: 80, h: 108, x: 532, y: 4 },
       ],
+      //stale pose animation
       [
         { w: 80, h: 108, x: 105, y: 125 },
         { w: 80, h: 108, x: 185, y: 125 },
@@ -43,6 +45,7 @@ export class Ryu extends Player {
         { w: 80, h: 108, x: 424, y: 122 },
         { w: 80, h: 108, x: 500, y: 120 },
       ],
+      //forward animation
       [
         { w: 80, h: 108, x: 58, y: 235 },
         { w: 80, h: 108, x: 137, y: 233 },
@@ -51,6 +54,7 @@ export class Ryu extends Player {
         { w: 80, h: 108, x: 373, y: 233 },
         { w: 80, h: 108, x: 449, y: 239 },
       ],
+      //backward animation
       [
         { w: 80, h: 108, x: 58, y: 344 },
         { w: 80, h: 108, x: 137, y: 344 },
@@ -59,6 +63,7 @@ export class Ryu extends Player {
         { w: 80, h: 108, x: 370, y: 344 },
         { w: 80, h: 108, x: 449, y: 344 },
       ],
+      //jump animation
       [
         { w: 80, h: 108, x: 34, y: 455 },
         { w: 80, h: 126, x: 110, y: 458 },
