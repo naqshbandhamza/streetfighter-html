@@ -1,5 +1,7 @@
 import { Player } from "./player.js";
 
+// character ryu's class
+
 export class Ryu extends Player {
   constructor(game, posX, posY, collisionRadius, speedModifier) {
     super(game, posX, posY, collisionRadius, speedModifier);
@@ -11,15 +13,17 @@ export class Ryu extends Player {
     this.width; // scalling
     this.height; // scalling
 
-    this.spriteX; // position x
-    this.spriteY; // position y
+    this.spriteX; // position x in canvas
+    this.spriteY; // position y in canvas
 
     this.row = 0; // represents row of sprite sheet
-    this.col = 0; // represents which frame in the current row is beign displayed
+    this.col = 0; // represents which frame in the current row is being displayed
 
     this.startAnimation = true;
     this.animationCounter = 0;
 
+    //as the sprite sheet is not unifrom so we store x,y coordinates of
+    //each frame in the sprite sheet
     this.frameSet = [
       [
         { w: 80, h: 108, x: 12, y: 4 },
