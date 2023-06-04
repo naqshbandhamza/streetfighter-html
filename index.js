@@ -19,6 +19,16 @@ window.addEventListener("load", function () {
 
   const game = new Game(canvas);
 
+  /*document.getElementById("myNav").addEventListener("click", () => {
+    document.getElementById("myNav").style.display = "none";
+    game.gameStart = true;
+    this.setTimeout(() => {
+      sfx.ryu.play();
+    }, 500);
+  });*/
+
+  game.gameStart = true;
+
   let lastTime = 0;
   function animate(timeStamp) {
     const deltaTime = timeStamp - lastTime;
@@ -28,12 +38,4 @@ window.addEventListener("load", function () {
     window.requestAnimationFrame(animate);
   }
   animate(0);
-
-  document.getElementById("myNav").addEventListener("click", () => {
-    document.getElementById("myNav").style.display = "none";
-    game.gameStart = true;
-    this.setTimeout(() => {
-      sfx.ryu.play();
-    }, 500);
-  });
 });
